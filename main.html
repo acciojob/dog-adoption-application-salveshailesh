@@ -1,16 +1,121 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+     
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      height: 80%;
+    }
+    #name {
+      display: block;
+      margin-top: 5px;
+      width: 50%;
+      height: 3vh;
+      border-radius: 6px;
+    }
+    #phone {
+      margin-top: 5px;
+      width: 50%;
+      height: 3vh;
+      display: block;
+      border-radius: 6px;
+    }
+
+    #address {
+      margin-top: 5px;
+      width: 50%;
+      height: 3vh;
+      display: block;
+      border-radius: 6px;
+    }
+
+    label{
+      margin-top: auto;
+      width: 50%;
+      padding: 0px;
+    }
+    #checkbox{
+      display: inline;
+      margin-top: 10px;
+    }
+    #multiSelect{
+      display: block;
+      
+    }
+
+    div{
+      padding-top: 5px;
+    }
+    select{
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <form>
+    <div>
+      <lable>
+        Name <input id="name" type="text" placeholder="Name" />
+      </lable>
+    </div>
+    <div>
+      <lable>
+        Phone Numbe
+        <input id="phone" type="text" placeholder="Phone Number" />
+      </lable>
+    </div>
+    <div>
+      <lable>Address <input id="address" type="text" placeholder="address" /></lable>
+    </div>
+    <div>
+      <lable>
+        Have you ever lived with a Dog before?
+        <input id="checkbox" type="checkbox" value="Have you ever lived with a Dog before?" />
+      </lable>
+    </div>
+    <div>
+      <label for="Dogs">Please select your preferred breeds	
+        <select name="select" id="multiSelect" multiple>
+          <option value="German Shepherd">German Shepherd</option>
+          <option value="Bulldog">Bulldog</option>
+          <option value="Labrador Retriever">Labrador Retriever</option>
+          <option value="Golden Retriever">Golden Retriever</option>
+          <option value="Poodel">Poodel</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <lable>
+        <input id="Submit" type="submit" value="Submit" />
+      </lable>
+    </div>
+  </form>
 </body>
 
 </html>
